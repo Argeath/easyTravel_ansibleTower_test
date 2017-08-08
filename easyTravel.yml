@@ -4,10 +4,8 @@
     - name: Open
       debug:
         msg: "easyTravel app problem detected, trying to recover!"
-      shell: echo "Easy Travel trying to recover!"
       when: state == "OPEN"
     - name: Resolved
       debug:
         msg: "easyTravel app recovered"
-      shell: echo "Easy Travel recovered!"
       when: state == "RESOLVED"
